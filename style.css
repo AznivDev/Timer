@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .wrapper {
     height: 100vh;
     width: 100vw;
@@ -11,23 +12,28 @@
     align-items: center;
     background-color: lightyellow;
     font-family: Suisse Intl, sans-serif;
-} 
+}
+
 .timerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
 }
-.timerContainer div{
+
+.timerContainer div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .buttonsContainer {
     display: flex;
     column-gap: 10px;
 }
-#minuteInput, button {
+
+#minuteInput,
+button {
     width: 70px;
     height: 30px;
     color: #fff;
@@ -39,15 +45,19 @@
     column-gap: 30;
     text-align: center;
 }
+
 #minuteInput {
     width: 120px;
-    background-color:#fff;
-    color:midnightblue;
+    background-color: #fff;
+    color: midnightblue;
     font-size: 18px;
     font-weight: bold;
     box-shadow: 2px 2px 2px 1px gainsboro;
 }
-#seconde, #milliseconde, #minute {
+
+#seconde,
+#milliseconde,
+#minute {
     width: 70px;
     height: 95px;
     color: midnightblue;
@@ -55,19 +65,23 @@
     text-align: center;
     vertical-align: middle;
 }
+
 #milliseconde {
     width: 100px;
 }
-.timesContainer{
+
+.timesContainer {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     column-gap: 5px;
 }
+
 .timesContainer p {
     position: relative;
     padding: 0px;
     text-align: right;
 }
+
 .sub {
     font-size: 22px;
     position: absolute;
@@ -76,4 +90,23 @@
     color: midnightblue;
 }
 
+@media (max-width: 387px) {
 
+    #seconde,
+    #milliseconde,
+    #minute {
+        width: 50px;
+    }
+
+    .buttonsContainer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 120px;
+        height: 35px;
+    }
+}
